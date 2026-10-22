@@ -1,0 +1,23 @@
+# secretos y entorno
+.env
+.env.*
+!.env.example
+.venv/
+
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# generados
+*.zip
+*.log
+
+# editor y sistema
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+/docs

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.22/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.22",
+  "version": "1.0.0",
+  "id": "{{BOT_ID}}",
+  "developer": {
+    "name": "Demo mIA",
+    "websiteUrl": "https://{{DOMINIO}}",
+    "privacyUrl": "https://{{DOMINIO}}/privacy",
+    "termsOfUseUrl": "https://{{DOMINIO}}/terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Asistente mIA (demo)",
+    "full": "Asistente mIA - demo de agente con MAF"
+  },
+  "description": {
+    "short": "Demo de un agente de Microsoft Agent Framework dentro de Teams.",
+    "full": "Demo de un agente construido con Microsoft Agent Framework y publicado en Teams con el Microsoft 365 Agents SDK. Consulta tipos de cambio de ejemplo y calcula interés compuesto."
+  },
+  "accentColor": "#0F4C81",
+  "bots": [
+    {
+      "botId": "{{BOT_ID}}",
+      "scopes": ["personal", "team", "groupChat"],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+      "commandLists": [
+        {
+          "scopes": ["personal", "team", "groupChat"],
+          "commands": [
+            {
+              "title": "reset",
+              "description": "Empezar una conversación nueva"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

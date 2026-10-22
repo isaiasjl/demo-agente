@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.git/
+*.zip
+teams/
+probar_demo.py
+README.md
+DESPLIEGUE.md

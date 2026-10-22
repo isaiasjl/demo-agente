@@ -1,0 +1,25 @@
+[project]
+name = "demo-agente-teams"
+version = "0.1.0"
+description = "Demo: agente de Microsoft Agent Framework (FastAPI) detras de un front del Microsoft 365 Agents SDK para Teams"
+requires-python = ">=3.12"
+dependencies = [
+    "agent-framework-core>=1.22.0",
+    "agent-framework-foundry>=1.15.0",
+    "azure-identity>=1.26.0",
+    "fastapi>=0.141.1",
+    "uvicorn>=0.54.0",
+    "httpx>=0.28.1",
+    "microsoft-agents-hosting-aiohttp>=1.9.0",
+    "microsoft-agents-authentication-msal>=1.9.0",
+    "python-dotenv>=1.2.4",
+]
+
+[dependency-groups]
+# Solo para desarrollar en tu maquina con tu plan Claude Pro (ClaudeAgent). NO va en la imagen de Azure.
+dev = [
+    "agent-framework-claude>=1.0.0b261015",
+]
+
+[tool.uv]
+package = false
